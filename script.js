@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, SESSION_DURATION);
 
         // Check if the current page is the login page before redirection
-        if (window.location.pathname.includes("login.html")) {
+        if (window.location.pathname.includes("index.html")) {
             window.location.href = "home.html";
         }
         updateUI();
@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
         sessionStorage.removeItem('username');
         sessionStorage.removeItem('sessionStart');
         if (showTimeoutMessage) {
-            if (!window.location.pathname.includes("login.html")) {
-                window.location.href = "login.html";
+            if (!window.location.pathname.includes("index.html")) {
+                window.location.href = "index.html";
                 timeoutMessage.style.display = 'block';
             }
             
@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
             timeoutMessage.style.display = 'none';
         }
         // Check if the current page is a protected page before redirection
-        if (!window.location.pathname.includes("login.html")) {
-            window.location.href = "login.html";
+        if (!window.location.pathname.includes("index.html")) {
+            window.location.href = "index.html";
         }
        
         
