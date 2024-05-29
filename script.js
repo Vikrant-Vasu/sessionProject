@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const contactBtn = document.getElementById('contact-btn');
     const logoutBtn = document.getElementById('logout-btn');
     
-    const SESSION_DURATION = 5*60 * 1000;
+    const SESSION_DURATION = 1*60 * 1000;
     //credentials
     const VALID_USERNAME = 'admin';
     const VALID_PASSWORD = '123456';
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Check if the current page is the login page before redirection
         if (window.location.pathname.includes("index.html")) {
-            window.location.href = "home.html";
+            window.location.href = "./pages/home.html";
         }
         updateUI();
     }
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         // Check if the current page is a protected page before redirection
         if (!window.location.pathname.includes("index.html")) {
-            window.location.href = "index.html";
+            window.location.href = "../index.html";
         }
        
         
