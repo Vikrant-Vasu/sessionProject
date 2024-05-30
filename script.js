@@ -68,7 +68,8 @@ document.addEventListener("DOMContentLoaded", function () {
             if (username === VALID_USERNAME && password === VALID_PASSWORD) {
                 startSession(username);
             } else {
-                alert('Invalid username or password.');
+                const error = document.getElementById("Error");
+                error.textContent = "Invalid Username or Password!"
             }
         });
     }

@@ -32,6 +32,12 @@ body {
     padding: 15px 0;
 }
 
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
 
 .navbar h2 {
     margin-left: 15px;
