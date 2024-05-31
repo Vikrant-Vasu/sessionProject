@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (showTimeoutMessage) {
       updateUI(true)
     } else {
+        
       timeoutMessage.style.display = "none";
     }
 
@@ -122,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "else condition will work if there is no start and end time"
         );
       }
-    }{
+    }else{
         endSession()
     }
     
